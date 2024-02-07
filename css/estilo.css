@@ -7,28 +7,51 @@
 body{
     background-color: black;
     color: antiquewhite;
+    width: 100vw;
+
 }
-.navegador{
-    position: fixed;
-    width: 100%;
-    z-index: 1
+footer{
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: aqua;
+    padding-bottom: 10px;
 }
+footer ul{
+    padding-left: 10px auto;
+    position:relative;
+    align-items: center;
+    display:flex;
+    margin-top: 15px;
+    flex-direction: row;
+}
+footer li{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+/*DISCOS */
 .main_discos{
-    width: 90%;
+    padding: 1rem ;
+    width: 100%;
     min-width: 180px;
-    background-color:rgba(2, 2, 79, 0.289);}
+    background-color: black;
+}
 .div_cuadrado_discos{
-    width: 95%;
+    width: 55%;
     min-width: 180px;
     border: 3px solid white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 15px auto;
+    margin: auto;
     padding: 15px;
     justify-content:center;
 }
 .main_discos_div{
+    margin: auto;
     padding: 10px;
 }
 .img_discos{
@@ -36,12 +59,56 @@ body{
     border: white double 2px;
 }
 .acor_discos{
-    
     width: 95%;
-    
     border: 3px solid white;
 }
 .div-foto{
     background-color: rgb(3, 3, 21);
+}
+/*DISCOS */
+
+/* HISTORIA */
+.container {
+    
+    margin-bottom: 20px;
+    display: grid;
+    width: 100vw;
+    height:2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(100px 1fr));
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "article1 article1 article1 article1 aside aside"
+      "article1 article1 article1 article1 aside aside"
+      "article1 article1 article1 article1 aside aside"
+      "article2 article2 article2 article2 aside aside"
+      "fotos fotos fotos fotos fotos fotos";
+}
+.article1 {
+    padding: 3%;
+    grid-area: article1; 
+    background-color: red;
+} 
+.article2 { 
+    height: auto;
+    padding: 3%;
+    grid-area: article2; 
+    background-color: red;
+}
+.aside {
+    padding: 3%;
+    grid-area: aside; 
+    background-color: red;
+    overflow-y: scroll;
+    
     
 }
+.fotos {
+    padding: 3%;
+    grid-area: fotos; 
+    background-color: red;
+}
+  
+
+/* HISTORIA */
