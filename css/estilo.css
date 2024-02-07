@@ -67,47 +67,90 @@ footer li{
 }
 /*DISCOS */
 
+
+
+
 /* HISTORIA */
-.container {
-    
-    margin-bottom: 20px;
-    display: grid;
+.body_historia{
+    background-color: yellow;
+    border: solid green 10px;
+}
+.contenedor{
+    justify-content: center;
+    margin: auto;
     width: 100vw;
-    height:2fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(100px 1fr));
-    gap: 15px 15px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "article1 article1 article1 article1 aside aside"
-      "article1 article1 article1 article1 aside aside"
-      "article1 article1 article1 article1 aside aside"
-      "article2 article2 article2 article2 aside aside"
-      "fotos fotos fotos fotos fotos fotos";
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 4fr auto;
+    gap:1.5rem;
+    grid-template-areas: 
+     "header header"
+     "main aside"
+     "article aside"
+     "footer footer";
 }
-.article1 {
-    padding: 3%;
-    grid-area: article1; 
-    background-color: red;
-} 
-.article2 { 
-    height: auto;
-    padding: 3%;
-    grid-area: article2; 
-    background-color: red;
+.header{
+    background-color: black;
+    width: 100vw;
+    display:flex;
+    grid-area: header;
+    justify-content: space-between;
 }
-.aside {
-    padding: 3%;
-    grid-area: aside; 
+
+.header nav{
+    width: 100vw;
+    padding: 1.2rem;
+}
+.main{
     background-color: red;
-    overflow-y: scroll;
+    padding:2.2rem;
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     
-    
 }
-.fotos {
-    padding: 3%;
-    grid-area: fotos; 
-    background-color: red;
+.aside img{
+    max-width: 350px;
+    min-width: 100px;
+}
+.article{
+    background-color: blueviolet;    
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    grid-area: article;
+}
+.aside{
+    border: 10px solid black;
+    background-color: aqua;
+    padding: 2rem;
+    align-items: first baseline;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+
+}
+.footer{
+    background-color: cornflowerblue;
+    padding:1.2rem;
+    grid-area: footer;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+        grid-template-areas: 
+     "header"
+     "main"
+     "aside"
+     "article"
+     "footer";
+     gap: 0.5rem;
+    } 
+    
 }
   
 
