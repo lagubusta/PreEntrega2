@@ -8,8 +8,10 @@
 body{
     background-color: black;
     color: antiquewhite;
-    width: fit-content;
-    overflow-x: hidden;   
+    width: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
 }
 footer{
     background-color: rgb(150, 16, 39);
@@ -45,7 +47,7 @@ footer{
     grid-area: header;
     justify-content: space-between;
         .header nav{
-            width: 100vw;
+            width: 100%;
             padding: 1.2rem;
         }
     }
@@ -186,36 +188,51 @@ main{
 
 /*MIEMBROS*/
 .main_miembros{
-    border: solid 5px rgb(18, 85, 193);
-    padding: 2rem;
-    display: flex;   
+    background-color: rgb(17, 17, 17);
+    border: solid green 3px;
+    display: flexbox;
     justify-content: center;
-    div{
-        border: solid gray 3px ;
-        display: flex;
+    padding: 1rem ;
+    width: fit-content;
+    height: fit-content;
+    min-width: 180px;
+    padding: 1.5rem;
+    
+    
+    div{ /*CARDS*/
+        width: fit-content;
+        background-color: rgba(128, 128, 128, 0.016);
         margin: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        :hover{
+            border: solid white 1px;
+        }   
+           
         
-        div{
+        
+        .card{ /*NUMERO CARDS */
             align-items: center;
-            background-color: aqua;
-            flex-direction: column;
-            width: 100%;
-            
-            
+            background-color: rgb(32, 32, 32);
+            width: 20rem;
+                  
             img{
-                margin: 1rem;
+                margin-top:1rem ;
                 padding: 1px;
-                border: solid darkblue 5px;
-                height: 10rem;
-                width: 10rem;
+                border: solid rgb(60, 60, 60) 5px;
+                height: 15rem;
+                width: 15rem;
                 object-fit: cover;
                 
             }
             div{
-                
-                display: flex;
-                background-color: rgb(54, 54, 54);
-                width: 100%;
+                background-color: rgb(54, 24, 24);
+                border:solid 0.5px rgb(19, 9, 9);
+                width: 100%;                
+                height:fit-content;
+
                 h5{
                     color: white;
                 }
@@ -224,9 +241,11 @@ main{
                 }
             }
             ul{
-                width: fit-content;
+                width: 100%;
+                
                 li{
-                background-color: yellow;
+                color: white;
+                background-color: rgb(47, 47, 47);
                 
                 }
             }
@@ -235,3 +254,39 @@ main{
 }
 
 /*MIEMBROS*/
+
+
+/* CONTACTO */
+    .main_contacto{
+        border: solid red 11px;
+        width: 90%;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        form{
+            width: 50%;
+            border: solid 11px yellow;
+            padding: 15px;
+            fieldset{
+                border: solid 3px green;
+                padding: 10px;
+                legend{
+                }
+                div{
+                    padding: 10px;
+                    border: solid 1px violet;
+                    width: 90%;
+                }
+            }
+        }
+        div{
+            iframe{
+            width: 50%;
+            
+            }
+
+        }
+}
+
+/* CONTACTO */

@@ -8,8 +8,10 @@
 body {
   background-color: black;
   color: antiquewhite;
-  width: fit-content;
+  width: 100%;
   overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -43,7 +45,7 @@ footer ul li min-width:fit-content a {
   justify-content: space-between;
 }
 .header .header nav {
-  width: 100vw;
+  width: 100%;
   padding: 1.2rem;
 }
 
@@ -131,48 +133,89 @@ main {
 /* HISTORIA*/
 /*MIEMBROS*/
 .main_miembros {
-  border: solid 5px rgb(18, 85, 193);
-  padding: 2rem;
+  background-color: rgb(17, 17, 17);
+  border: solid green 3px;
+  display: flexbox;
+  justify-content: center;
+  padding: 1rem;
+  width: fit-content;
+  height: fit-content;
+  min-width: 180px;
+  padding: 1.5rem;
+}
+.main_miembros div { /*CARDS*/
+  width: fit-content;
+  background-color: rgba(128, 128, 128, 0.016);
+  margin: 15px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
-.main_miembros div {
-  border: solid gray 3px;
-  display: flex;
-  margin: 15px;
+.main_miembros div :hover {
+  border: solid white 1px;
 }
-.main_miembros div div {
+.main_miembros div .card { /*NUMERO CARDS */
   align-items: center;
-  background-color: aqua;
-  flex-direction: column;
-  width: 100%;
+  background-color: rgb(32, 32, 32);
+  width: 20rem;
 }
-.main_miembros div div img {
-  margin: 1rem;
+.main_miembros div .card img {
+  margin-top: 1rem;
   padding: 1px;
-  border: solid darkblue 5px;
-  height: 10rem;
-  width: 10rem;
+  border: solid rgb(60, 60, 60) 5px;
+  height: 15rem;
+  width: 15rem;
   object-fit: cover;
 }
-.main_miembros div div div {
-  display: flex;
-  background-color: rgb(54, 54, 54);
+.main_miembros div .card div {
+  background-color: rgb(54, 24, 24);
+  border: solid 0.5px rgb(19, 9, 9);
+  width: 100%;
+  height: fit-content;
+}
+.main_miembros div .card div h5 {
+  color: white;
+}
+.main_miembros div .card div p {
+  color: white;
+}
+.main_miembros div .card ul {
   width: 100%;
 }
-.main_miembros div div div h5 {
+.main_miembros div .card ul li {
   color: white;
-}
-.main_miembros div div div p {
-  color: white;
-}
-.main_miembros div div ul {
-  width: fit-content;
-}
-.main_miembros div div ul li {
-  background-color: yellow;
+  background-color: rgb(47, 47, 47);
 }
 
 /*MIEMBROS*/
+/* CONTACTO */
+.main_contacto {
+  border: solid red 11px;
+  width: 90%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main_contacto form {
+  width: 50%;
+  border: solid 11px yellow;
+  padding: 15px;
+}
+.main_contacto form fieldset {
+  border: solid 3px green;
+  padding: 10px;
+}
+.main_contacto form fieldset div {
+  padding: 10px;
+  border: solid 1px violet;
+  width: 90%;
+}
+.main_contacto div iframe {
+  width: 50%;
+}
+
+/* CONTACTO */
 
 /*# sourceMappingURL=estilo.css.map */
