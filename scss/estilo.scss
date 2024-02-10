@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    color: antiquewhite;
+    width: fit-content;
+    overflow-x: hidden;   
+}
+footer{
+    background-color: rgb(150, 16, 39);
+    margin-top:2rem ;
+    ul{
+        justify-content: center;
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        padding: 30px;
+        li{
+            display: inline-block;
+            text-align: center;
+            padding: 15px;
+            border: solid green 1px;
+            min-width:fit-content
+            
+            a{
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+    
+
+/*HEADER*/
+.header{
+    
+    width: fit-content;
+    display:flex;
+    grid-area: header;
+    justify-content: space-between;
+        .header nav{
+            width: 100vw;
+            padding: 1.2rem;
+        }
+    }
+    .container-fluid{
+        width: 100vw;
+        a{
+        }
+        button{
+            span{
+
+            }
+        }
+        div{
+            ul{
+                li{
+                    a{
+
+                    }
+                }
+            }
+        }
+}
+/*HEADER*/
+
+/* MAIN*/
+main{
+    margin: 0 2rem;
+    justify-content: center;
+    .esto_carousel{
+        .carousel-inne{
+            
+            .div{
+                img{   
+                }
+            }
+        }
+        button{
+            span{
+            }
+        }
+
+    }
+}
+/* MAIN*/
+
+
+/* DISCOS*/
+.main_discos{
+    background-color: rgb(17, 17, 17);
+    display: flexbox;
+    justify-content: center;
+    padding: 1rem ;
+    width: fit-content;
+    min-width: 180px;
+    
+    .div_cuadrado_discos{
+        width: 55%;
+        min-width: 180px;
+        border: 10px double white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 15px;
+        justify-content:center;
+        a{
+            .img_discos{
+                width: 150px;
+                margin: .5rem;
+                border: white solid 2px;
+                padding: 10px;
+            }
+            :hover{
+                border: aqua solid 2px;
+                width: 155px;
+            }
+        }
+    }
+    .accordion{
+        div{
+            h2{
+                button{
+
+                }
+            }
+        }
+    }
+}
+/* DISCOS*/
+
+/* HISTORIA*/
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px 6px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "article1 article1 article1 article1 aside aside"
+      "article1 article1 article1 article1 aside aside"
+      "article1 article1 article1 article1 aside aside"
+      "article2 article2 article2 article2 aside aside"
+      "fotos fotos fotos fotos fotos fotos";  
+    .article1 {
+        padding: 2rem;
+         grid-area: article1;
+         background-color: red;
+         overflow-y: scroll;         
+    }
+    .article2 {
+        padding: 2rem;
+         grid-area: article2; 
+         background-color:green;
+         padding: 10px;
+    }
+    .aside {
+        overflow: scroll;
+        padding: 2rem;
+         grid-area: aside; 
+         background-color: violet;
+         .card{
+            margin: 10px;
+            width: fit-content;
+            align-items: center;
+            
+
+         }
+    }
+    .fotos {
+        padding: 2rem;
+         grid-area: fotos; 
+         background-color: yellow;
+    }
+}
+/* HISTORIA*/
+
+/*MIEMBROS*/
+.main_miembros{
+    border: solid 5px rgb(18, 85, 193);
+    padding: 2rem;
+    display: flex;   
+    justify-content: center;
+    div{
+        border: solid gray 3px ;
+        display: flex;
+        margin: 15px;
+        
+        div{
+            align-items: center;
+            background-color: aqua;
+            flex-direction: column;
+            width: 100%;
+            
+            
+            img{
+                margin: 1rem;
+                padding: 1px;
+                border: solid darkblue 5px;
+                height: 10rem;
+                width: 10rem;
+                object-fit: cover;
+                
+            }
+            div{
+                
+                display: flex;
+                background-color: rgb(54, 54, 54);
+                width: 100%;
+                h5{
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+            }
+            ul{
+                width: fit-content;
+                li{
+                background-color: yellow;
+                
+                }
+            }
+        }
+    }
+}
+
+/*MIEMBROS*/

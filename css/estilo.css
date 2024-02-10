@@ -1,157 +1,178 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-body{
-    background-color: black;
-    color: antiquewhite;
-    width: 100vw;
-
-}
-footer{
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    background-color: aqua;
-    padding-bottom: 10px;
-}
-footer ul{
-    padding-left: 10px auto;
-    position:relative;
-    align-items: center;
-    display:flex;
-    margin-top: 15px;
-    flex-direction: row;
-}
-footer li{
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
-}
-/*DISCOS */
-.main_discos{
-    padding: 1rem ;
-    width: 100%;
-    min-width: 180px;
-    background-color: black;
-}
-.div_cuadrado_discos{
-    width: 55%;
-    min-width: 180px;
-    border: 3px solid white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 15px;
-    justify-content:center;
-}
-.main_discos_div{
-    margin: auto;
-    padding: 10px;
-}
-.img_discos{
-    width: 150px;
-    border: white double 2px;
-}
-.acor_discos{
-    width: 95%;
-    border: 3px solid white;
-}
-.div-foto{
-    background-color: rgb(3, 3, 21);
-}
-/*DISCOS */
-
-
-
-
-/* HISTORIA */
-.body_historia{
-    background-color: yellow;
-    border: solid green 10px;
-}
-.contenedor{
-    justify-content: center;
-    margin: auto;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto 4fr auto;
-    gap:1.5rem;
-    grid-template-areas: 
-     "header header"
-     "main aside"
-     "article aside"
-     "footer footer";
-}
-.header{
-    background-color: black;
-    width: 100vw;
-    display:flex;
-    grid-area: header;
-    justify-content: space-between;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.header nav{
-    width: 100vw;
-    padding: 1.2rem;
-}
-.main{
-    background-color: red;
-    padding:2.2rem;
-    grid-area: main;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.aside img{
-    max-width: 350px;
-    min-width: 100px;
-}
-.article{
-    background-color: blueviolet;    
-    padding:3rem;
-    display: flex;
-    flex-direction: column;
-    grid-area: article;
-}
-.aside{
-    border: 10px solid black;
-    background-color: aqua;
-    padding: 2rem;
-    align-items: first baseline;
-    display: flex;
-    flex-direction: column;
-    grid-area: aside;
-
-}
-.footer{
-    background-color: cornflowerblue;
-    padding:1.2rem;
-    grid-area: footer;
-    text-align: center;
+body {
+  background-color: black;
+  color: antiquewhite;
+  width: fit-content;
+  overflow-x: hidden;
 }
 
-@media screen and (max-width:600px) {
-    .contenedor{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 2fr auto auto;
-        grid-template-areas: 
-     "header"
-     "main"
-     "aside"
-     "article"
-     "footer";
-     gap: 0.5rem;
-    } 
-    
+footer {
+  background-color: rgb(150, 16, 39);
+  margin-top: 2rem;
 }
-  
+footer ul {
+  justify-content: center;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  padding: 30px;
+}
+footer ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  border: solid green 1px;
+}
+footer ul li min-width:fit-content a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
 
-/* HISTORIA */
+/*HEADER*/
+.header {
+  width: fit-content;
+  display: flex;
+  grid-area: header;
+  justify-content: space-between;
+}
+.header .header nav {
+  width: 100vw;
+  padding: 1.2rem;
+}
+
+.container-fluid {
+  width: 100vw;
+}
+/*HEADER*/
+/* MAIN*/
+main {
+  margin: 0 2rem;
+  justify-content: center;
+}
+/* MAIN*/
+/* DISCOS*/
+.main_discos {
+  background-color: rgb(17, 17, 17);
+  display: flexbox;
+  justify-content: center;
+  padding: 1rem;
+  width: fit-content;
+  min-width: 180px;
+}
+.main_discos .div_cuadrado_discos {
+  width: 55%;
+  min-width: 180px;
+  border: 10px double white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 15px;
+  justify-content: center;
+}
+.main_discos .div_cuadrado_discos a .img_discos {
+  width: 150px;
+  margin: 0.5rem;
+  border: white solid 2px;
+  padding: 10px;
+}
+.main_discos .div_cuadrado_discos a :hover {
+  border: aqua solid 2px;
+  width: 155px;
+}
+/* DISCOS*/
+/* HISTORIA*/
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 6px 6px;
+  grid-auto-flow: row;
+  grid-template-areas: "article1 article1 article1 article1 aside aside" "article1 article1 article1 article1 aside aside" "article1 article1 article1 article1 aside aside" "article2 article2 article2 article2 aside aside" "fotos fotos fotos fotos fotos fotos";
+}
+.container .article1 {
+  padding: 2rem;
+  grid-area: article1;
+  background-color: red;
+  overflow-y: scroll;
+}
+.container .article2 {
+  padding: 2rem;
+  grid-area: article2;
+  background-color: green;
+  padding: 10px;
+}
+.container .aside {
+  overflow: scroll;
+  padding: 2rem;
+  grid-area: aside;
+  background-color: violet;
+}
+.container .aside .card {
+  margin: 10px;
+  width: fit-content;
+  align-items: center;
+}
+.container .fotos {
+  padding: 2rem;
+  grid-area: fotos;
+  background-color: yellow;
+}
+
+/* HISTORIA*/
+/*MIEMBROS*/
+.main_miembros {
+  border: solid 5px rgb(18, 85, 193);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.main_miembros div {
+  border: solid gray 3px;
+  display: flex;
+  margin: 15px;
+}
+.main_miembros div div {
+  align-items: center;
+  background-color: aqua;
+  flex-direction: column;
+  width: 100%;
+}
+.main_miembros div div img {
+  margin: 1rem;
+  padding: 1px;
+  border: solid darkblue 5px;
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+}
+.main_miembros div div div {
+  display: flex;
+  background-color: rgb(54, 54, 54);
+  width: 100%;
+}
+.main_miembros div div div h5 {
+  color: white;
+}
+.main_miembros div div div p {
+  color: white;
+}
+.main_miembros div div ul {
+  width: fit-content;
+}
+.main_miembros div div ul li {
+  background-color: yellow;
+}
+
+/*MIEMBROS*/
+
+/*# sourceMappingURL=estilo.css.map */

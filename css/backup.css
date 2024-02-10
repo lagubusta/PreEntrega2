@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+    color: antiquewhite;
+    width: 100vw;
+
+}
+footer{
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: aqua;
+    padding-bottom: 10px;
+}
+footer ul{
+    padding-left: 10px auto;
+    position:relative;
+    align-items: center;
+    display:flex;
+    margin-top: 15px;
+    flex-direction: row;
+}
+footer li{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+/*DISCOS */
+.main_discos{
+    padding: 1rem ;
+    width: 100%;
+    min-width: 180px;
+    background-color: black;
+}
+.div_cuadrado_discos{
+    width: 55%;
+    min-width: 180px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 15px;
+    justify-content:center;
+}
+.main_discos_div{
+    margin: auto;
+    padding: 10px;
+}
+.img_discos{
+    width: 150px;
+    border: white double 2px;
+}
+.acor_discos{
+    width: 95%;
+    border: 3px solid white;
+}
+.div-foto{
+    background-color: rgb(3, 3, 21);
+}
+/*DISCOS */
+
+
+
+
+/* HISTORIA */
+.body_historia{
+    background-color: yellow;
+    border: solid green 10px;
+}
+.contenedor{
+    justify-content: center;
+    margin: auto;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 4fr auto;
+    gap:1.5rem;
+    grid-template-areas: 
+     "header header"
+     "main aside"
+     "article aside"
+     "footer footer";
+}
+.header{
+    background-color: black;
+    width: 100vw;
+    display:flex;
+    grid-area: header;
+    justify-content: space-between;
+}
+
+.header nav{
+    width: 100vw;
+    padding: 1.2rem;
+}
+.main{
+    background-color: red;
+    padding:2.2rem;
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.aside img{
+    max-width: 350px;
+    min-width: 100px;
+}
+.article{
+    background-color: blueviolet;    
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    grid-area: article;
+}
+.aside{
+    border: 10px solid black;
+    background-color: aqua;
+    padding: 2rem;
+    align-items: first baseline;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+
+}
+.footer{
+    background-color: cornflowerblue;
+    padding:1.2rem;
+    grid-area: footer;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+        grid-template-areas: 
+     "header"
+     "main"
+     "aside"
+     "article"
+     "footer";
+     gap: 0.5rem;
+    } 
+    
+}
+  
+
+/* HISTORIA */
