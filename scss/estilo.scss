@@ -37,7 +37,6 @@ footer{
         }
     }
 }
-    
 
 /*HEADER*/
 .header{
@@ -48,12 +47,11 @@ footer{
     justify-content: space-between;
         .header nav{
             width: 100%;
-            min-width: 480px;
             padding: 1.2rem;
         }
     }
     .container-fluid{
-        width: 100%;
+        width: 100vw;
         a{
         }
         button{
@@ -72,27 +70,29 @@ footer{
         }
 }
 /*HEADER*/
+.div_img_fondo_index{
+    width: fit-content;
+    height: 50%;
+    justify-content: center;
+    img{
+        width: 100%;
+    }
+}
+/* INDEX */
+.main_indexx{
+    background-color: rgba(35, 34, 34, 0.605);
+    border: none;
+    padding: 2rem;
+}
+/* INDEX */
 
 /* MAIN*/
 main{
     margin: 0 2rem;
     justify-content: center;
-    .esto_carousel{
-        .carousel-inne{
-            
-            .div{
-                img{   
-                }
-            }
-        }
-        button{
-            span{
-            }
-        }
-
-    }
 }
 /* MAIN*/
+
 
 
 /* DISCOS*/
@@ -103,9 +103,12 @@ main{
     padding: 1rem ;
     width: fit-content;
     min-width: 180px;
+    @media screen {
+        
+    }
     
     .div_cuadrado_discos{
-        width: 55%;
+        width: 85%;
         min-width: 180px;
         border: 10px double white;
         display: flex;

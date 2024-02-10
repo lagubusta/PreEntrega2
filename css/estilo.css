@@ -39,7 +39,7 @@ footer ul li min-width:fit-content a {
 
 /*HEADER*/
 .header {
-  width: fit-content;
+  width: 100%;
   display: flex;
   grid-area: header;
   justify-content: space-between;
@@ -53,11 +53,29 @@ footer ul li min-width:fit-content a {
   width: 100vw;
 }
 /*HEADER*/
+.div_img_fondo_index {
+  width: fit-content;
+  height: 50%;
+  justify-content: center;
+}
+.div_img_fondo_index img {
+  width: 100%;
+}
+
+/* INDEX */
+.main_indexx {
+  background-color: rgba(35, 34, 34, 0.605);
+  border: none;
+  padding: 2rem;
+}
+
+/* INDEX */
 /* MAIN*/
 main {
   margin: 0 2rem;
   justify-content: center;
 }
+
 /* MAIN*/
 /* DISCOS*/
 .main_discos {
@@ -69,7 +87,7 @@ main {
   min-width: 180px;
 }
 .main_discos .div_cuadrado_discos {
-  width: 55%;
+  width: 85%;
   min-width: 180px;
   border: 10px double white;
   display: flex;
