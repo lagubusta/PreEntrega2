@@ -42,17 +42,18 @@ footer{
 /*HEADER*/
 .header{
     
-    width: fit-content;
+    width: 100%;
     display:flex;
     grid-area: header;
     justify-content: space-between;
         .header nav{
             width: 100%;
+            min-width: 480px;
             padding: 1.2rem;
         }
     }
     .container-fluid{
-        width: 100vw;
+        width: 100%;
         a{
         }
         button{
