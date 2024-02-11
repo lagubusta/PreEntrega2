@@ -59,7 +59,7 @@ footer ul li min-width:fit-content a {
   justify-content: center;
 }
 .div_img_fondo_index img {
-  width: 100%;
+  width: 100vw;
 }
 
 /* INDEX */
@@ -79,7 +79,7 @@ main {
 /* MAIN*/
 /* DISCOS*/
 .main_discos {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(23, 191, 40);
   display: flexbox;
   justify-content: center;
   padding: 1rem;
@@ -96,6 +96,11 @@ main {
   margin: auto;
   padding: 15px;
   justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .main_discos .div_cuadrado_discos .div_cuadrado_discos {
+    width: 100vw;
+  }
 }
 .main_discos .div_cuadrado_discos a .img_discos {
   width: 150px;
@@ -235,5 +240,11 @@ main {
 }
 
 /* CONTACTO */
+@media only screen and (max-width: 768px) {
+  .main_discos {
+    background-color: red;
+    min-width: 768px;
+  }
+}
 
 /*# sourceMappingURL=estilo.css.map */

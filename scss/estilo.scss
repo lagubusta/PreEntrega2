@@ -75,7 +75,7 @@ footer{
     height: 50%;
     justify-content: center;
     img{
-        width: 100%;
+        width: 100vw;
     }
 }
 /* INDEX */
@@ -97,15 +97,13 @@ main{
 
 /* DISCOS*/
 .main_discos{
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(23, 191, 40);
     display: flexbox;
     justify-content: center;
     padding: 1rem ;
     width: fit-content;
     min-width: 180px;
-    @media screen {
-        
-    }
+    
     
     .div_cuadrado_discos{
         width: 85%;
@@ -117,6 +115,12 @@ main{
         margin: auto;
         padding: 15px;
         justify-content:center;
+        @media only screen and (min-width: 768px) {
+            .div_cuadrado_discos {
+                width: 100vw;
+            }
+         }
+        
         a{
             .img_discos{
                 width: 150px;
@@ -130,6 +134,7 @@ main{
             }
         }
     }
+
     .accordion{
         div{
             h2{
@@ -294,3 +299,11 @@ main{
 }
 
 /* CONTACTO */
+
+
+@media only screen and (max-width: 768px) {
+    .main_discos {
+        background-color: red;
+        min-width: 768px;
+    }
+ }
