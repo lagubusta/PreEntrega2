@@ -14,77 +14,84 @@
     <!-- Insertar estilo.css-->
     <link rel="stylesheet" href="../css/estilo.css">
     <!-- Insertar estilo.css-->
-    <title>MIEMBROS</title>
+    <title>CONTACTO</title>
 </head>
 <body>
     <!--hamburguesa-->    <header class="header"> 
-      <nav class="navbar navbar-expand-lg border border-primary border-2 bg-dark mb-3">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="../index.html">PINK FLOYD</a>
-          <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="./discos.html">DISCOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="./miembros.html">MIEMBROS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="./historia.html">HISTORIA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="./contacto.html">CONTACTO</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>      
+  <nav class="navbar navbar-expand-lg border-primary bg-dark mb-3">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="../index.html">PINK FLOYD</a>
+      <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="./discos.html">DISCOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./miembros.html">MIEMBROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./historia.html">HISTORIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>      
     <!--hamburguesa-->    </header>
 
-    <!-- MAIN --><main class="main_contacto">
-    <form>
-      <fieldset>
-        <legend>Contacto</legend>
+    <main class="main_contacto">
+      <form class="form_contacto">
         <div class="mb-3">
-          <label for="textInput" class="form-label">Nombre</label>
-          <input type="text" id="disabledTextInput" class="form-control" placeholder="Escriba su nombre">
-          <label for="textInput" class="form-label">Apellido</label>
-          <input type="text" id="disabledTextInput" class="form-control" placeholder="Escriba su Apellido">
+          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-          <label for="Select" class="form-label">Pais</label>
-          <select id="Select" class="form-select">
-            <option id="disabledSelect">Selecionar Pais</option>
-            <hr>
-            <option>Argentina</option>
-            <option>Uruguay</option>
-            <option>Colombia</option>
-            <option>Brasil</option>
-            <option>Peru</option>
-            <option>Bolivia</option>
-            <option>Ecuador</option>
-          </select>
+          <label for="exampleInputEmail1" class="form-label">Apellido</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="FieldsetCheck">
-            <label class="form-check-label" for="FieldsetCheck">
-              Check para enviar.
-            </label>
-          </div>
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
-        <button type="submit" class="btn btn-primary">Aceptar</button>
-        <button type="reset" class="btn btn-primary">Borrar Datos</button>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016713573648!2d-58.38414532578081!3d-34.60373887295422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1707671047989!5m2!1ses-419!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
 
-        
-      </fieldset>
-    </form>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26290.610045753518!2d-58.48662973965932!3d-34.54529396022463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20Monumental!5e0!3m2!1ses-419!2sar!4v1707580960817!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <!-- MAIN --></main>
+
+    <footer>
+      <ul class="ul_footer">
+          <li class="ul_footer_li">
+            <a href="http://www.gmail.com" target="_blank" class="nondeco"><h4 class="h4footer">MAIL</h4></a>
+          </li>
+          <li class="ul_footer_li">
+            <a href="http://www.whatsapp.com" target="_blank" class="nondeco"><h4 class="h4footer">+54911 6493 1707</h4></a>
+          </li>
+          <li class="ul_footer_li">
+            <a href="http://www.facebook.com" target="_blank" class="nondeco"><h4 class="h4footer">FACEBOOK</h4></a>
+          </li>
+          <li class="ul_footer_li">
+            <a href="http://www.mercadolibre.com" target="_blank" class="nondeco"><h4 class="h4footer">Shop</h4></a>
+          </li>
+          <li class="ul_footer_li">
+            <a href="http://www.mercadopago.com" target="_blank" class="nondeco"><h4 class="h4footer">Pagos</h4></a>
+          </li>
+      </ul>
+    </footer>
 
     <!--INSERTAR BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

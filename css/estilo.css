@@ -97,11 +97,6 @@ main {
   padding: 15px;
   justify-content: center;
 }
-@media only screen and (min-width: 768px) {
-  .main_discos .div_cuadrado_discos .div_cuadrado_discos {
-    width: 100vw;
-  }
-}
 .main_discos .div_cuadrado_discos a .img_discos {
   width: 150px;
   margin: 0.5rem;
@@ -184,12 +179,9 @@ main {
   width: 20rem;
 }
 .main_miembros div .card img {
-  margin-top: 1rem;
-  padding: 1px;
-  border: solid rgb(60, 60, 60) 5px;
-  height: 15rem;
-  width: 15rem;
-  object-fit: cover;
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  width: 20rem;
 }
 .main_miembros div .card div {
   background-color: rgb(54, 24, 24);
@@ -198,7 +190,7 @@ main {
   height: fit-content;
 }
 .main_miembros div .card div h5 {
-  color: white;
+  color: red;
 }
 .main_miembros div .card div p {
   color: white;
@@ -243,13 +235,40 @@ main {
 @media only screen and (max-width: 768px) {
   .main_discos {
     background-color: red;
-    min-width: 768px;
+    display: flexbox;
+    border: solid yellow 3px;
+    justify-content: center;
+    min-width: 180px;
+  }
+  .div_cuadrado_discos {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 15px;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 320px) {
-  .main_discos {
+  body .main_discos {
     background-color: purple;
-    min-width: 320px;
+    display: flexbox;
+    justify-content: center;
+    padding: 1rem;
+    width: fit-content;
+    min-width: 180px;
+  }
+  body .main_discos .div_cuadrado_discos {
+    width: 100%;
+    min-width: 180px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 15px;
+    justify-content: center;
   }
 }
 
