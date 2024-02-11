@@ -1,219 +1,196 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
 
-/* DE TODO*/body{
+/* DE TODO*/
+body {
   background-color: black;
 }
-footer{
-  
+
+footer {
+  font-family: "Courier New", Courier, monospace;
   bottom: 0;
   width: 100%;
-  background-color:rgb(13, 13, 13);
-  
-  
-  .ul_footer{
-      
-      margin: 1rem 2rem 0 2rem ;
+  background-color: rgb(13, 13, 13);
+}
+footer .ul_footer {
+  margin: 1rem 2rem 0 2rem;
+  padding: 1rem 2rem 0 2rem;
+  background-color: rgb(35, 35, 35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .ul_footer .ul_footer_li {
+  display: inline-block;
+  text-decoration: none;
+}
+footer .ul_footer .ul_footer_li a {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  color: white;
+}
 
-      padding: 1rem 2rem 0 2rem ;
-      background-color: rgb(35, 35, 35);
-      display: flex;
-      flex-direction: column;
-      align-items:center;
-      
-      .ul_footer_li{
-          display: inline-block;
-          text-decoration: none;
-          a{
-              font-family: Arial, Helvetica, sans-serif;
-              text-decoration: none;
-              color: white;
-          }
-      }
-
+@media screen and (min-width: 768px) {
+  footer {
+    font-family: "Courier New", Courier, monospace;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(13, 13, 13);
   }
-
-} 
-@media screen and (min-width: 768px){
-  footer{
-  
-      bottom: 0;
-      width: 100%;
-      background-color:rgb(13, 13, 13);
-      
-      
-      .ul_footer{
-          
-          margin: 1rem 2rem 0 2rem ;
-  
-          padding: 1rem 2rem 0 2rem ;
-          background-color: rgb(35, 35, 35);
-          display: flex;
-          flex-direction: row;
-          flex-wrap: 2rem;
-          align-items:center;
-          justify-content: space-between;
-          
-          .ul_footer_li{
-              display: inline-block;
-              text-decoration: none;
-              padding: 15px;
-              a{
-                  
-                  font-family: Arial, Helvetica, sans-serif;
-                  text-decoration: none;
-                  color: white;
-              }
-          }
-  
-      }
-  
-  } 
-}/*DE TODO*/
-
-
-.div_img_fondo_index{
-  img{
+  footer .ul_footer {
+    margin: 1rem 2rem 0 2rem;
+    padding: 1rem 2rem 0 2rem;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .ul_footer .ul_footer_li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+  }
+  footer .ul_footer .ul_footer_li a {
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+    color: white;
+  }
+} /*DE TODO*/
+.div_img_fondo_index img {
   width: 100%;
-  }
 }
-/* INDEX */
-.main_indexx{
-  background-color: red;
-  padding: 1rem;
-  div{
-      
-  }
-  .indexx_fotos{
-      background-color: aqua;
-      padding: 3px;
-      margin: 3px 0;
-      img{
-          padding: 3px;
-          width: 100%;
-      }
-  }
-}
-@media screen and (min-width: 768px){
-  .main_indexx{
-      background-color: violet;
-      padding: 1rem;
-      div{
-          
-      }
-      .indexx_fotos{
-          display: flex;
-          background-color: aqua;
-          padding: 3px;
-          margin: 3px 0;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          img{
-              padding: 6px;
-              width: 50%;
-          }
-      }
-  }   
-  
-}
-/* INDEX */
 
-/*DISCOS*/
-.main_discos{
+/* INDEX */
+.main_indexx {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
   background-color: black;
-  .div_cuadrado_discos{
-      padding: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      .main_discos_div{
-            border: solid white 2px;
-            a{
-            .img_discos{
-              width: 60px;
-            }
-          }
-      }
+  padding: 1rem;
+}
+.main_indexx .indexx_fotos {
+  padding: 3px;
+  margin: 3px 0;
+}
+.main_indexx .indexx_fotos img {
+  padding: 3px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main_indexx {
+    background-color: black;
+    padding: 6rem;
+  }
+  .main_indexx .indexx_fotos {
+    display: flex;
+    background-color: rgb(115, 115, 115);
+    padding: 3px;
+    margin: 3px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .main_indexx .indexx_fotos img {
+    padding: 6px;
+    width: 50%;
   }
 }
-@media screen and (min-width: 768px){
-  .main_discos{
-      background-color: black;
-      .div_cuadrado_discos{
-          padding: 1rem;
-          display: flex;
-          flex-wrap: wrap;
-          gap: 1rem;
-          justify-content: center;
-          border-top: double white 3px;
-          border-bottom: double white 3px;
-          .main_discos_div{
-                border: solid white 2px;
-                a{
-                .img_discos{
-                  width: 150px;
-                }
-              }
-          }
-      }
+/* INDEX */
+/*DISCOS*/
+.main_discos {
+  background-color: black;
+}
+.main_discos .div_cuadrado_discos {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.main_discos .div_cuadrado_discos .main_discos_div {
+  border: solid white 2px;
+}
+.main_discos .div_cuadrado_discos .main_discos_div a .img_discos {
+  width: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .main_discos {
+    background-color: black;
+  }
+  .main_discos .div_cuadrado_discos {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    border-top: double white 3px;
+    border-bottom: double white 3px;
+  }
+  .main_discos .div_cuadrado_discos .main_discos_div {
+    border: solid white 2px;
+  }
+  .main_discos .div_cuadrado_discos .main_discos_div a .img_discos {
+    width: 150px;
   }
 }
 /*DISCOS*/
-
 /*MIEMBROS*/
-.main_miembros{
-  border: solid 1px  rebeccapurple;
-  h4{
-      text-align: center;
-      color: pink;
-  }
-  .todas_cards{
-      border: solid 1px red;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.2rem;
-      justify-content: center;
-      .card{
-          background-color: rgb(31, 31, 31);
-          border: solid 1px yellow;
-          margin-top:1rem;
-          padding: 1rem 0.5rem;
-          width: 8rem;
-          align-items: center;
-          img{
-              align-items: center;
-              background-color: rgb(32, 32, 32);
-              width: 100%;
-          }
-          .card-body{
-              width: 100%;
-              .card-title{
-                  border: brown solid 1px;
-                  background-color: brown;
-                  width: 100%;
-                  text-align: center;
-                  color: gray
-              }
-          }
-          ul{
-              width: 100%;
-              li{
-                  background-color: rgb(38, 38, 38);
-                  color: white;
-              }
-          }
-      }
-  }
+.main_miembros {
+  border: solid 1px rebeccapurple;
 }
-/*MIEMBROS*/
+.main_miembros h4 {
+  text-align: center;
+  color: pink;
+}
+.main_miembros .todas_cards {
+  border: solid 1px red;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  justify-content: center;
+}
+.main_miembros .todas_cards .card {
+  background-color: rgb(31, 31, 31);
+  border: solid 1px yellow;
+  margin-top: 1rem;
+  padding: 1rem 0.5rem;
+  width: 8rem;
+  align-items: center;
+}
+.main_miembros .todas_cards .card img {
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+}
+.main_miembros .todas_cards .card .card-body {
+  width: 100%;
+}
+.main_miembros .todas_cards .card .card-body .card-title {
+  border: brown solid 1px;
+  background-color: brown;
+  width: 100%;
+  text-align: center;
+  color: gray;
+}
+.main_miembros .todas_cards .card ul {
+  width: 100%;
+}
+.main_miembros .todas_cards .card ul li {
+  background-color: rgb(38, 38, 38);
+  color: white;
+}
 
+/*MIEMBROS*/
 /* HISTORIA*/
 .container {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
   width: 100%;
   height: 100%;
   display: grid;
@@ -221,144 +198,142 @@ footer{
   grid-template-rows: 1fr;
   gap: 6px 6px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "article1"
-    "article2"
-    "aside"
-    "fotos";  
-  .article1 {
-      width: 100%;
-      height: 500px;
-      
-      grid-area: article1;
-      background-color: red;
-      overflow-y: scroll;         
-  }
-  .article2 {
-      padding: 2rem;
-      grid-area: article2; 
-      background-color:green;
-      padding: 10px;
-  }
-  .aside {
-      overflow: scroll;
-      margin-bottom: 2rem;
-      padding: 2rem;
-      grid-area: aside; 
-      background-color: violet;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      .card{
-         padding: 1rem;
-         width: fit-content;
-         align-items: center;  
-         justify-content: space-around;
-      }
-  }
-  .fotos {
-      padding: 2rem;
-       grid-area: fotos; 
-       background-color: yellow;
-  }
+  grid-template-areas: "article1" "article2" "aside" "fotos";
 }
-@media screen and (min-width: 768px){
+.container .article1 {
+  width: 100%;
+  height: 500px;
+  padding: 1rem;
+  grid-area: article1;
+  background-color: rgb(10, 10, 10);
+  overflow-y: scroll;
+}
+.container .article2 {
+  padding: 1rem;
+  grid-area: article2;
+  background-color: gray;
+  color: black;
+}
+.container .aside {
+  overflow: scroll;
+  margin-bottom: 2rem;
+  padding: 10px;
+  grid-area: aside;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.container .aside .card {
+  background-color: rgb(29, 3, 3);
+  color: white;
+  padding: 1rem;
+  width: fit-content;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .fotos {
+  padding: 2rem;
+  grid-area: fotos;
+  background-color: white;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
   .container {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  overflow:inherit;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 6px 6px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "article1 article1 article1 article1 aside aside"
-    "article1 article1 article1 article1 aside aside"
-    "article1 article1 article1 article1 aside aside"
-    "article2 article2 article2 article2 aside aside"
-    "fotos fotos fotos fotos fotos fotos";  
-  .article1 {
-      padding: 2rem;
-      grid-area: article1;
-      background-color: red;
-      overflow-y: scroll;         
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    overflow: inherit;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px 6px;
+    grid-auto-flow: row;
+    grid-template-areas: "article1 article1 article1 article1 aside aside" "article1 article1 article1 article1 aside aside" "article1 article1 article1 article1 aside aside" "article2 article2 article2 article2 aside aside" "fotos fotos fotos fotos fotos fotos";
   }
-  .article2 {
-      padding: 2rem;
-      grid-area: article2; 
-      background-color:green;
-      padding: 10px;
+  .container .article1 {
+    padding: 2rem;
+    color: black;
+    background-color: whitesmoke;
+    grid-area: article1;
+    overflow-y: scroll;
   }
-  .aside {
-      width: 100%;
-      height: 100%;
-      grid-area: aside;
-      background-color: violet;
-      .card{
-         width: fit-content;
-         align-items: center
-      }
+  .container .article2 {
+    padding: 2rem;
+    grid-area: article2;
+    background-color: black;
+    border: double 3px white;
+    color: white;
+    padding: 10px;
   }
-  .fotos {
-      padding: 2rem;
-      grid-area: fotos; 
-      background-color: yellow;
+  .container .aside {
+    width: 100%;
+    height: 100%;
+    grid-area: aside;
+    background-color: rgb(40, 40, 40);
+  }
+  .container .aside .card {
+    width: fit-content;
+    align-items: center;
+  }
+  .container .fotos {
+    padding: 2rem;
+    grid-area: fotos;
+    background-color: white;
+    color: black;
   }
 }
-}
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .container {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  overflow:inherit;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 6px 6px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "article1 article1 article1 article1 aside aside"
-    "article1 article1 article1 article1 aside aside"
-    "article1 article1 article1 article1 aside aside"
-    "article2 article2 article2 article2 aside aside"
-    "fotos fotos fotos fotos fotos fotos";  
-  .article1 {
-      padding: 2rem;
-      grid-area: article1;
-      background-color: violet;
-      overflow-y: scroll;         
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    overflow: inherit;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px 6px;
+    grid-auto-flow: row;
+    grid-template-areas: "article1 article1 article1 article1 aside aside" "article1 article1 article1 article1 aside aside" "article1 article1 article1 article1 aside aside" "article2 article2 article2 article2 aside aside" "fotos fotos fotos fotos fotos fotos";
   }
-  .article2 {
-      padding: 2rem;
-      grid-area: article2; 
-      background-color:green;
-      padding: 10px;
+  .container .article1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+    grid-area: article1;
+    background-color: black;
+    color: white;
+    border: solid white 3px;
+    overflow-y: scroll;
   }
-  .aside {
-      width: 100%;
-      height: 100%;
-      grid-area: aside;
-      background-color: violet;
-      
-      .card{
-         width: fit-content;
-         align-items: center
-      }
+  .container .article2 {
+    padding: 2rem;
+    grid-area: article2;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
   }
-  .fotos {
-      padding: 2rem;
-      grid-area: fotos; 
-      background-color: yellow;
+  .container .aside {
+    width: 100%;
+    height: 100%;
+    grid-area: aside;
+    background-color: black;
+    scrollbar-width: none;
   }
-}
+  .container .aside .card {
+    width: fit-content;
+    align-items: center;
+  }
+  .container .fotos {
+    padding: 2rem;
+    grid-area: fotos;
+    background-color: black;
+    color: white;
+    border: solid gray 2px;
+  }
 }
 /* HISTORIA*/
-
-
 /* CONTACTO */
-.main_contacto{
+.main_contacto {
   margin: 1rem;
   background-color: rgb(83, 83, 83);
   display: flexbox;
@@ -367,62 +342,68 @@ footer{
   gap: 2px;
   justify-content: space-between;
   align-items: center;
-  border: solid yellow 3px;
-
-  .form_contacto{
-      width: 98%;
-      margin: auto;
-      padding: 1rem;
-      background-color: rgb(24, 24, 24);
-      border: solid green 3px;
-      .mb-3{
-          label{
-              color:pink;
-          }
-          input{
-              background-color: rgb(83, 83, 83);
-              color: pink;
-          }
-      }
-  }
-  iframe{
-      width: 98%;
-      padding-top: 20px;
-      height: 350px;
-      border: solid green 3px;
-  }
 }
-@media screen and (min-width: 768px){
-  .main_contacto{
-      margin: 1rem;
-      background-color: rgb(83, 83, 83);
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 2px;
-      justify-content: center;
-      align-items: center;
-      border: solid yellow 3px;
-  
-      .form_contacto{
-          width: 50%;
-          background-color: rgb(24, 24, 24);
-          border: solid green 3px;
-          .mb-3{
-              label{
-                  color:pink;
-              }
-              input{
-                  background-color: rgb(83, 83, 83);
-                  color: pink;
-              }
-          }
-      }
-      iframe{
-          width:49%;
-          height: fit-content;
-          border: solid green 3px;
-      }
+.main_contacto .form_contacto {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  background-color: rgb(24, 24, 24);
+}
+.main_contacto .form_contacto .mb-3 label {
+  color: pink;
+}
+.main_contacto .form_contacto .mb-3 input {
+  background-color: rgb(83, 83, 83);
+  color: pink;
+}
+.main_contacto .divv_ifr {
+  text-align: center;
+  padding: 1rem;
+}
+.main_contacto .divv_ifr h5 {
+  text-align: center;
+  color: white;
+}
+.main_contacto .divv_ifr iframe {
+  width: 100%;
+  padding-top: 20px;
+  height: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .main_contacto {
+    background-color: rgb(83, 83, 83);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_contacto .form_contacto {
+    width: 50%;
+    background-color: rgb(24, 24, 24);
+  }
+  .main_contacto .form_contacto .mb-3 label {
+    color: pink;
+  }
+  .main_contacto .form_contacto .mb-3 input {
+    background-color: rgb(83, 83, 83);
+  }
+  .main_contacto .divv_ifr {
+    width: 49%;
+    height: 100%;
+  }
+  .main_contacto .divv_ifr h5 {
+    color: pink;
+    background-color: rgb(24, 24, 24);
+    padding: 15px;
+    margin: 3px 15%;
+  }
+  .main_contacto .divv_ifr iframe {
+    width: 100%;
+    height: 400px;
   }
 }
 /* CONTACTO */
+
+/*# sourceMappingURL=estilo.css.map */

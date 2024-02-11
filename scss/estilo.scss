@@ -9,7 +9,7 @@
     background-color: black;
 }
 footer{
-    
+    font-family: 'Courier New', Courier, monospace;
     bottom: 0;
     width: 100%;
     background-color:rgb(13, 13, 13);
@@ -29,7 +29,8 @@ footer{
             display: inline-block;
             text-decoration: none;
             a{
-                font-family: Arial, Helvetica, sans-serif;
+                
+                font-family: 'Courier New', Courier, monospace;
                 text-decoration: none;
                 color: white;
             }
@@ -40,16 +41,14 @@ footer{
 } 
 @media screen and (min-width: 768px){
     footer{
-    
+        font-family: 'Courier New', Courier, monospace;
         bottom: 0;
         width: 100%;
         background-color:rgb(13, 13, 13);
         
         
         .ul_footer{
-            
             margin: 1rem 2rem 0 2rem ;
-    
             padding: 1rem 2rem 0 2rem ;
             background-color: rgb(35, 35, 35);
             display: flex;
@@ -59,12 +58,12 @@ footer{
             justify-content: space-between;
             
             .ul_footer_li{
+                
                 display: inline-block;
                 text-decoration: none;
                 padding: 15px;
                 a{
-                    
-                    font-family: Arial, Helvetica, sans-serif;
+                    font-family: 'Courier New', Courier, monospace;
                     text-decoration: none;
                     color: white;
                 }
@@ -83,13 +82,14 @@ footer{
 }
 /* INDEX */
 .main_indexx{
-    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
     padding: 1rem;
     div{
         
     }
     .indexx_fotos{
-        background-color: aqua;
         padding: 3px;
         margin: 3px 0;
         img{
@@ -100,14 +100,14 @@ footer{
 }
 @media screen and (min-width: 768px){
     .main_indexx{
-        background-color: violet;
-        padding: 1rem;
+        background-color: black;
+        padding: 6rem;
         div{
             
         }
         .indexx_fotos{
             display: flex;
-            background-color: aqua;
+            background-color: rgb(115, 115, 115);
             padding: 3px;
             margin: 3px 0;
             flex-wrap: wrap;
@@ -124,6 +124,7 @@ footer{
 
 /*DISCOS*/
 .main_discos{
+    
     background-color: black;
     .div_cuadrado_discos{
         padding: 1rem;
@@ -214,6 +215,8 @@ footer{
 
 /* HISTORIA*/
 .container {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
     width: 100%;
     height: 100%;
     display: grid;
@@ -229,38 +232,43 @@ footer{
     .article1 {
         width: 100%;
         height: 500px;
-        
+        padding: 1rem;
         grid-area: article1;
-        background-color: red;
+        background-color: rgb(10, 10, 10);
         overflow-y: scroll;         
     }
     .article2 {
-        padding: 2rem;
+        
+        padding: 1rem;
         grid-area: article2; 
-        background-color:green;
-        padding: 10px;
+        background-color:gray;
+        color: black;
+        
     }
     .aside {
         overflow: scroll;
         margin-bottom: 2rem;
-        padding: 2rem;
+        padding: 10px;
         grid-area: aside; 
-        background-color: violet;
+        background-color: black;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 0.5rem;
         .card{
-           padding: 1rem;
-           width: fit-content;
-           align-items: center;  
-           justify-content: space-around;
+            background-color: rgb(29, 3, 3);
+            color: white;
+            padding: 1rem;
+            width: fit-content;
+            align-items: center;  
+            justify-content: space-around;
         }
     }
     .fotos {
         padding: 2rem;
-         grid-area: fotos; 
-         background-color: yellow;
+        grid-area: fotos; 
+        background-color: white; 
+        color: black
     }
 }
 @media screen and (min-width: 768px){
@@ -281,21 +289,24 @@ footer{
       "fotos fotos fotos fotos fotos fotos";  
     .article1 {
         padding: 2rem;
+        color: black;
+        background-color: whitesmoke;
         grid-area: article1;
-        background-color: red;
         overflow-y: scroll;         
     }
     .article2 {
         padding: 2rem;
         grid-area: article2; 
-        background-color:green;
+        background-color: black;
+        border: double 3px white;
+        color: white;
         padding: 10px;
     }
     .aside {
         width: 100%;
         height: 100%;
         grid-area: aside;
-        background-color: violet;
+        background-color: rgb(40, 40, 40);
         .card{
            width: fit-content;
            align-items: center
@@ -304,7 +315,8 @@ footer{
     .fotos {
         padding: 2rem;
         grid-area: fotos; 
-        background-color: yellow;
+        background-color: white;
+        color: black;
     }
 }
 }
@@ -325,23 +337,28 @@ footer{
       "article2 article2 article2 article2 aside aside"
       "fotos fotos fotos fotos fotos fotos";  
     .article1 {
+        
+        font-family: Arial, Helvetica, sans-serif;
         padding: 2rem;
         grid-area: article1;
-        background-color: violet;
+        background-color: black;
+        color: white;
+        border: solid white 3px;
         overflow-y: scroll;         
     }
     .article2 {
         padding: 2rem;
         grid-area: article2; 
-        background-color:green;
+        color: black;
+        background-color:rgb(255, 255, 255);
         padding: 10px;
     }
     .aside {
         width: 100%;
         height: 100%;
         grid-area: aside;
-        background-color: violet;
-        
+        background-color: black;
+        scrollbar-width: none;
         .card{
            width: fit-content;
            align-items: center
@@ -350,7 +367,9 @@ footer{
     .fotos {
         padding: 2rem;
         grid-area: fotos; 
-        background-color: yellow;
+        background-color: black;
+        color: white;
+        border: solid gray 2px;
     }
 }
 }
@@ -367,14 +386,14 @@ footer{
     gap: 2px;
     justify-content: space-between;
     align-items: center;
-    border: solid yellow 3px;
+    
 
     .form_contacto{
-        width: 98%;
+        width: 100%;
         margin: auto;
         padding: 1rem;
         background-color: rgb(24, 24, 24);
-        border: solid green 3px;
+        
         .mb-3{
             label{
                 color:pink;
@@ -385,43 +404,64 @@ footer{
             }
         }
     }
-    iframe{
-        width: 98%;
-        padding-top: 20px;
-        height: 350px;
-        border: solid green 3px;
+    .divv_ifr{
+        text-align: center;
+        
+        padding: 1rem;
+        h5{
+            text-align: center;
+            color: white;
+        }  
+        iframe{
+            width: 100%;
+            padding-top: 20px;
+            height: 350px;
+        }
     }
 }
+
+
+
+
+
+
 @media screen and (min-width: 768px){
     .main_contacto{
-        margin: 1rem;
         background-color: rgb(83, 83, 83);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 2px;
         justify-content: center;
         align-items: center;
-        border: solid yellow 3px;
+        
     
         .form_contacto{
             width: 50%;
             background-color: rgb(24, 24, 24);
-            border: solid green 3px;
+            
             .mb-3{
                 label{
                     color:pink;
                 }
                 input{
                     background-color: rgb(83, 83, 83);
-                    color: pink;
+                    
                 }
             }
         }
-        iframe{
-            width:49%;
-            height: fit-content;
-            border: solid green 3px;
+        .divv_ifr{
+            width: 49%;
+            height: 100%;
+            h5{
+                color:pink;
+                background-color: rgb(24, 24, 24);
+                padding: 15px;
+                margin: 3px 15%;
+            }
+            iframe{
+                width:100%;
+                height: 400px;
+            }
         }
     }
 }
