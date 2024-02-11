@@ -246,5 +246,11 @@ main {
     min-width: 768px;
   }
 }
+@media only screen and (max-width: 320px) {
+  .main_discos {
+    background-color: purple;
+    min-width: 320px;
+  }
+}
 
 /*# sourceMappingURL=estilo.css.map */
