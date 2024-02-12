@@ -11,8 +11,13 @@ body {
 }
 
 .header nav div div ul li:hover {
-  border-radius: 30%;
   background-color: black;
+}
+@media screen and (min-width: 768px) {
+  .header nav div div ul li:hover {
+    border-radius: 10px;
+    background-color: black;
+  }
 }
 footer {
   bottom: 0;
@@ -35,6 +40,9 @@ footer .ul_footer .ul_footer_li a {
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
   color: white;
+}
+footer .ul_footer .ul_footer_li a h4 {
+  font-size: 14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -64,6 +72,9 @@ footer .ul_footer .ul_footer_li a {
     font-family: "Courier New", Courier, monospace;
     text-decoration: none;
     color: white;
+  }
+  footer .ul_footer .ul_footer_li a h4 {
+    font-size: 16px;
   }
 } /*DE TODO*/
 .div_img_fondo_index img {
@@ -153,6 +164,7 @@ footer .ul_footer .ul_footer_li a {
   color: pink;
 }
 .main_miembros .todas_cards {
+  width: 100%;
   border: none;
   display: flex;
   flex-wrap: wrap;
