@@ -8,31 +8,50 @@
 /* DE TODO*/body{
     background-color: black;
 }
+.header{
+    nav{
+        div{
+            a{
+
+            }
+            button{
+                span{
+                }
+            }
+            div{
+                ul{
+                    li{
+                        &:hover{
+                            border-radius: 30%;
+                            background-color: black;
+                            }
+                        a{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 footer{
-    font-family: 'Courier New', Courier, monospace;
     bottom: 0;
     width: 100%;
     background-color:rgb(13, 13, 13);
-    
-    
     .ul_footer{
-        
         margin: 1rem 2rem 0 2rem ;
-
         padding: 1rem 2rem 0 2rem ;
         background-color: rgb(35, 35, 35);
         display: flex;
         flex-direction: column;
         align-items:center;
-        
         .ul_footer_li{
             display: inline-block;
             text-decoration: none;
             a{
-                
                 font-family: 'Courier New', Courier, monospace;
                 text-decoration: none;
                 color: white;
+                
             }
         }
 
@@ -41,6 +60,7 @@ footer{
 } 
 @media screen and (min-width: 768px){
     footer{
+        
         font-family: 'Courier New', Courier, monospace;
         bottom: 0;
         width: 100%;
@@ -63,6 +83,7 @@ footer{
                 text-decoration: none;
                 padding: 15px;
                 a{
+                    font-size: 14px;
                     font-family: 'Courier New', Courier, monospace;
                     text-decoration: none;
                     color: white;
@@ -101,7 +122,7 @@ footer{
 @media screen and (min-width: 768px){
     .main_indexx{
         background-color: black;
-        padding: 6rem;
+        padding: 0 6rem;
         div{
             
         }
@@ -168,20 +189,22 @@ footer{
 
 /*MIEMBROS*/
 .main_miembros{
-    border: solid 1px  rebeccapurple;
+    font-size: 12px;
+    
     h4{
         text-align: center;
-        color: pink;
+        color: pink;            
     }
+    
     .todas_cards{
-        border: solid 1px red;
+        border: none;
         display: flex;
         flex-wrap: wrap;
         gap: 0.2rem;
         justify-content: center;
         .card{
             background-color: rgb(31, 31, 31);
-            border: solid 1px yellow;
+            border: solid 1px rgb(27, 27, 27);
             margin-top:1rem;
             padding: 1rem 0.5rem;
             width: 8rem;
@@ -190,12 +213,15 @@ footer{
                 align-items: center;
                 background-color: rgb(32, 32, 32);
                 width: 100%;
+                height: 10rem;
+                object-fit: cover;
             }
             .card-body{
                 width: 100%;
                 .card-title{
-                    border: brown solid 1px;
-                    background-color: brown;
+                    
+                    border: none;
+                    background-color: rgb(74, 16, 16);
                     width: 100%;
                     text-align: center;
                     color: gray
@@ -209,7 +235,85 @@ footer{
                 }
             }
         }
+        
     }
+    .segunda{
+        margin:1.5rem;
+        h2{
+            color: pink;
+        }
+        p{
+            
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main_miembros{
+        font-size: 14px;
+        border: solid 2px  rgba(11, 11, 11, 0.196);
+        width: 70%;
+        margin: auto;
+        h4{
+
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            &:hover{
+                color: palevioletred;
+            }         
+        }
+        
+        .todas_cards{
+            border: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.2rem;
+            justify-content: center;
+            .card{
+                background-color: rgb(31, 31, 31);
+                border: solid 3px rgb(25, 25, 25);
+                margin-top:1rem;
+                padding: 1rem 0.5rem;
+                width: 16rem;
+                align-items: center;
+                img{
+                    align-items: center;
+                    background-color: rgb(32, 32, 32);
+                    width: 100%;
+                    height: 10rem;
+                    object-fit: cover;
+                }
+                .card-body{
+                    width: 100%;
+                    .card-title{
+                        border: none;
+                        background-color: rgb(34, 39, 38);
+                        box-shadow: 3px 3px 0px rgb(58, 0, 0);
+                        width: 100%;
+                        text-align: center;
+                        color: gray;
+                        padding: 6px 30px;
+                        &:hover{
+                            font-size: 16px;
+                            color:rgb(77, 77, 77);
+                            background-color:rgb(58, 0, 0);
+                            box-shadow: 3px 3px 0px rgb(68, 68, 68);
+                        }
+                    }
+                    
+                }
+                ul{
+                    width: 100%;
+                    li{
+                        background-color: rgb(38, 38, 38);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+        
 }
 /*MIEMBROS*/
 
@@ -419,12 +523,6 @@ footer{
         }
     }
 }
-
-
-
-
-
-
 @media screen and (min-width: 768px){
     .main_contacto{
         background-color: rgb(83, 83, 83);
